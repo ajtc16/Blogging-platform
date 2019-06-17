@@ -1,0 +1,13 @@
+/Users/antonio/Projects/BlogAPI/BlogAPI/bin/Debug/netcoreapp2.1/BlogAPI.deps.json
+/Users/antonio/Projects/BlogAPI/BlogAPI/bin/Debug/netcoreapp2.1/BlogAPI.runtimeconfig.json
+/Users/antonio/Projects/BlogAPI/BlogAPI/bin/Debug/netcoreapp2.1/BlogAPI.runtimeconfig.dev.json
+/Users/antonio/Projects/BlogAPI/BlogAPI/bin/Debug/netcoreapp2.1/BlogAPI.dll
+/Users/antonio/Projects/BlogAPI/BlogAPI/bin/Debug/netcoreapp2.1/BlogAPI.pdb
+/Users/antonio/Projects/BlogAPI/BlogAPI/obj/Debug/netcoreapp2.1/BlogAPI.csproj.CoreCompileInputs.cache
+/Users/antonio/Projects/BlogAPI/BlogAPI/obj/Debug/netcoreapp2.1/BlogAPI.RazorAssemblyInfo.cache
+/Users/antonio/Projects/BlogAPI/BlogAPI/obj/Debug/netcoreapp2.1/BlogAPI.RazorAssemblyInfo.cs
+/Users/antonio/Projects/BlogAPI/BlogAPI/obj/Debug/netcoreapp2.1/BlogAPI.AssemblyInfoInputs.cache
+/Users/antonio/Projects/BlogAPI/BlogAPI/obj/Debug/netcoreapp2.1/BlogAPI.AssemblyInfo.cs
+/Users/antonio/Projects/BlogAPI/BlogAPI/obj/Debug/netcoreapp2.1/BlogAPI.RazorTargetAssemblyInfo.cache
+/Users/antonio/Projects/BlogAPI/BlogAPI/obj/Debug/netcoreapp2.1/BlogAPI.dll
+/Users/antonio/Projects/BlogAPI/BlogAPI/obj/Debug/netcoreapp2.1/BlogAPI.pdb

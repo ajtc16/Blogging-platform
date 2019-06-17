@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<meta charset="UTF-8"/>
+	 
+	
+</h:head>
+<h:body>
+	 
+
+				<h:form id="forma" class="login100-form validate-form p-l-55 p-r-55 p-t-178">
+				<p:growl id="growl" showDetail="true" sticky="true" /> 
+				
+				
+				<div style="width:100px; margin:0 auto;;">
+				<h:outputText value="HELLO!! #{postBean.name}" />
+				
+				</div>
+				
+				
+				<div style="max-width:1000px; margin:0 auto;;">
+	        		 <p:dataTable id ="tabla" var="post" value="#{postBean.postList}">
+
+					 
+					    <p:column headerText="POSTS">
+					    
+						    <p:panel id="basic" header="#{post.postID} - #{post.status2}" footer="#{post.dateCreated}" style="margin-bottom:20px">
+						    	
+						    	<p:inplace id="ajax" editor="true">
+						    	
+						    	<p:inputTextarea value="#{post.text}" rows="6" cols="33" />  
+						    	<p:panelGrid columns="3">
+						    	<p:commandLink value="Update" id="ajaxu" 
+									 action="#{postBean.updatePost}" rendered="#{post.userID == postBean.userID}"
+									  styleClass="login100-form-btn" update=":forma:tabla">
+									  <f:setPropertyActionListener value="#{post}" target="#{postBean.post}"/>
+									  
+									  </p:commandLink> 
+								<p:commandLink value="Delete" id="ajaxd" 
+									 action="#{postBean.deletePost}" rendered="#{post.userID == postBean.userID}"
+									  styleClass="login100-form-btn" >
+									  <f:setPropertyActionListener value="#{post}" target="#{postBean.post}"/>
+									  </p:commandLink> 
+								<p:selectOneRadio id="console" value="#{post.status}" unselectable="true" layout="grid" columns="1" rendered="#{post.userID == postBean.userID}">
+						            <f:selectItem itemLabel="Draft" itemValue="0" />
+						            <f:selectItem itemLabel="Private" itemValue="1" />
+						            <f:selectItem itemLabel="Public" itemValue="2" />
+						        </p:selectOneRadio>
+							
+						    	</p:panelGrid>
+						    	
+						        </p:inplace>
+						    </p:panel>
+					        
+					    </p:column>
+					 
+
+					</p:dataTable>
+   				
+				</div>
+				
+				
+				
+				
+				
+				 
+				</h:form>
+
+	 
+	
+</h:body>
+</html>
